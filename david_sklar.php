@@ -243,6 +243,7 @@ foreach($array_cities as $city => $population) {
 print("</table>");
 ///
 echo "</details></pre>";
+
 ////////////////////////////////////////////////////////////////////////////////
 echo '<pre><hr><b> стр.92 задание 4. </b><br><details><summary>Спойлер</summary>';
 ///
@@ -326,4 +327,37 @@ $names = [
 ///
 echo "</details></pre>";
 ////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+echo '<pre><hr><b> стр. 112 задание 1. </b><br><details><summary>Спойлер</summary>';
+////////
+function descrImg($url_img, $alt = "Изображение", $height = "auto", $width = "auto") {
+    $descr_img = "<img src='$url_img' alt='$alt' height='$height' width='$width' />";
+    return $descr_img;
+}
+echo descrImg("images/demo.jpg", "Демонстрационное изображение.", "100px", "150px");
+////////
+echo "</details></pre>";
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+echo '<pre><hr><b> стр. 112 задание 2. </b><br><details><summary>Спойлер</summary>';
+////////////////////////
+$img_dir = "images/";
+// var_dump($GLOBALS['img_dir']);
+function imgTag($img_name) {
+	$img_tag = "<img src='" . $GLOBALS['img_dir'] . $img_name . "' />";
+	return $img_tag;
+}
+echo imgTag("demo.jpg");
+////////////////////////
+echo "</details></pre>";
+////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+echo '<pre><hr><b> стр. 112 задание 3. </b><br><details><summary>Спойлер</summary>';
+////////////////////////
+
+////////////////////////
+echo "</details></pre>";
+////////////////////////
 ?>
